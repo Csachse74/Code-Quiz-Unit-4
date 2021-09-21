@@ -9,9 +9,9 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">View Highscore</a>
-        </nav>
+        <!-- <nav> -->
+            <a href="./highscores.html" style="display: block; padding: 10px 10px;"> View Highscore </a>
+        <!-- </nav> -->
         <p style="display: flex; position: relative; justify-content: right; top: -30px;">
             Time: <span id="timer"> 75</span>
         </p>
@@ -25,29 +25,144 @@
                 Try to answer the folloeing code-related questions within the time limit. Keep in mind that
                 incorrect answers will penalize your score/time by ten seconds!
             </p>
-            <button id="start-button" style="font-size: 25px; text-align: center; left: 200px;">
+            <button id="start-button" style="font-size: 25px; text-align: center; left: 200px; background-color: purple; border-radius: 8px; color: white;">
                 Start Quiz
             </button>
         </section>
-        <section id="quiz" style="display: none;">
+        <section class="divquestion" questionNumber="1" style="display: none;">
             <h1 id="question" style="display: flex; justify-content: center; font-size: 55px; flex-wrap: wrap;">
-                Try to answer the folloeing code-related questions within the time limit.
+                Commonly used data types DO NOT include:
             </h1>
-            <button id="answer1" style="font-size: 25px; text-align: center; left: 200px; margin: 10px;">
-                Start Quiz
+            <button id="answer1" value="0" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                1. strings
             </button>
             <br>
-            <button id="answer2" style="font-size: 25px; text-align: center; left: 200px; margin: 10px;">
-                Start Quiz
+            <button id="answer2" value="0" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                2. booleans
             </button>
             <br>
-            <button id="answer3" style="font-size: 25px; text-align: center; left: 200px; margin: 10px;">
-                Start Quiz
+            <button id="answer3" value="0" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                3. alerts
             </button>
             <br>
-            <button id="answer4" style="font-size: 25px; text-align: center; left: 200px; margin: 10px;">
-                Start Quiz
+            <button id="answer4" value="0" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                4. numbers
             </button>
+            <br>
+
+        </section>
+        <section class="divquestion" questionNumber="2" style="display: none;">
+            <h1 id="question" style="display: flex; justify-content: center; font-size: 55px; flex-wrap: wrap;">
+                The condition in an if/else statement is enclosed within ______.
+            </h1>
+            <button id="answer5" value="1" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                1. quotes
+            </button>
+            <br>
+            <button id="answer6" value="1" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                2. curly brackets
+            </button>
+            <br>
+            <button id="answer7" value="1" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                3. parentheses
+            </button>
+            <br>
+            <button id="answer8" value="1" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                4. square brackets
+            </button>
+            <br>
+
+        </section>
+        <section class="divquestion" questionNumber="3" style="display: none;">
+            <h1 id="question" style="display: flex; justify-content: center; font-size: 55px; flex-wrap: wrap;">
+                Arrays in JavaScript can be used to store ______.
+            </h1>
+            <button id="answer9" value="2" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                1. numbers and strings
+            </button>
+            <br>
+            <button id="answer10" value="2" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                2. other arrays
+            </button>
+            <br>
+            <button id="answer11" value="2" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                3. booleans
+            </button>
+            <br>
+            <button id="answer12" value="2" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                4. all of the above
+            </button>
+            <br>
+
+        </section>
+        <section class="divquestion" questionNumber="4" style="display: none;">
+            <h1 id="question" style="display: flex; justify-content: center; font-size: 55px; flex-wrap: wrap;">
+                String values must be enclosed within ______ when being assigned to variables.
+            </h1>
+            <button id="answer13" value="3" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                1. commas
+            </button>
+            <br>
+            <button id="answer14" value="3" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                2. curly brackets
+            </button>
+            <br>
+            <button id="answer15" value="3" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                3. quotes
+            </button>
+            <br>
+            <button id="answer16" value="3" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                4. parentheses
+            </button>
+            <br>
+
+        </section>
+        <section class="divquestion" questionNumber="5" style="display: none;">
+            <h1 id="question" style="display: flex; justify-content: center; font-size: 55px; flex-wrap: wrap;">
+                A very useful tool used during development and debugging for printing content to the debugger is:
+            </h1>
+            <button id="answer17" value="4" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                1. JavaScript
+            </button>
+            <br>
+            <button id="answer18" value="4" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                2. terminal/bash
+            </button>
+            <br>
+            <button id="answer19" value="4" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                3. for loops
+            </button>
+            <br>
+            <button id="answer20" value="4" class="answer" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                4. console log
+            </button>
+            <br>
+
+        </section>
+        <section id="submit" style="display: none;">
+            <h1 style="display: flex; font-size: 55px; flex-wrap: wrap; text-align: center;">
+                All done!
+            </h1>
+            <p style="display: flex; font-size: 30px; flex-wrap: wrap; text-align: center;">
+                Your final score is <span id="finalScore">___</span>.
+            </p>
+            <label for="highscore" style="font-size: 25px;">Enter initials:</label>
+            <input id="highscore" size="30" style="height: 25px;">
+            <a href="./highscores.html">
+                <button id="btn-submit" style="font-size: 25px; text-align: center; left: 200px; margin: 10px; background-color: purple; border-radius: 8px; color: white;">
+                    Submit
+                </button>
+            </a>
+        </section>
+        <section id="correct" style="display: none;">
+            <h1 style="font-style: italic; display: flex; font-size: 35px; flex-wrap: wrap; text-align: center; border-top: 5px solid grey; color: grey; padding: 10px;">
+                Correct!
+            </h1>
+        </section>
+        <section id="incorrect" style="display: none;">
+            <h1 style="font-style: italic; display: flex; font-size: 35px; flex-wrap: wrap; text-align: center; border-top: 5px solid grey; color: grey; padding: 10px;">
+                Incorrect!
+            </h1>
         </section>
     </main>
     <script src="assets/js/script.js"></script>
