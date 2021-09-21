@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highscores</title>
+    <style>
+        li {
+            background-color: plum;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="width: 700px; margin: auto;">
+        <section>
+            <h1
+                style="font-size: 50px; font-weight: 2000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;">
+                Highscores</h1>
+            <ol id="list"></ol>
+            <a href="./index.html">
+                <button
+                    style="font-size: 25px; text-align: center; left: 200px; background-color: purple; border-radius: 8px; color: white;">
+                    Go back
+                </button>
+            </a>
+            <button id="clear"
+                style="font-size: 25px; margin: 10px; text-align: center; left: 200px; background-color: purple; border-radius: 8px; color: white;">
+                Clear Highscores
+            </button>
+        </section>
+    </main>
+    <script>
+        document.querySelector("#clear").addEventListener("click", function () {
+            localStorage.clear();
+        })
+        var score = localStorage.getItem("highscore");
+        function init() {
+            var ul = document.getElementById("list");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(score));
+            ul.appendChild(li);
+        }
+        init();
+    </script>
+</body>
+
+</html>
